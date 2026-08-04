@@ -80,3 +80,34 @@ These measures make the report interactive.
 | KPI / Status | 3 |
 | Dynamic | 2 |
 | **Total** | **19** |
+
+
+## Dashboard Visualizations & Layout
+
+The Power BI dashboard is designed using a **Cinematic Dark Theme** with high-contrast visual cues for executive-level reporting. It spans five dedicated pages:
+
+### Page 1: Executive Summary
+* **Dynamic Header Banner**: Powered by `[Dynamic Title]`, updating dynamically based on the selected language slicer.
+* **Core KPI Cards**: Four high-level metric cards showing `Total Movies`, `Total Revenue`, `Total Profit`, and `Average Rating`.
+* **Budget vs. Revenue Split**: A Donut chart highlighting overall expenditure versus gross revenue.
+* **Top 10 High-Profit Movies**: Horizontal Clustered Bar Chart filtered using a `Top 10 N` visual filter by `[Total Profit]`.
+* **Global Slicers**: Interactive filters for `release_date` (Range Slider), `original_language` (Dropdown), and `status`.
+
+### Page 2: Financial Trend & Market Growth Analysis
+* **Revenue & Movie Count Over Time**: A Line and Stacked Column Chart tracking yearly revenue alongside production volume.
+* **Profit Breakdown (Decomposition Tree)**: An interactive visual allowing users to drill down into `[Total Profit]` by language, status, and release year.
+* **YoY Performance Indicator**: A KPI visual measuring yearly revenue growth against the `[YoY Revenue Growth %]` target.
+
+### Page 3: Geographic & Language Performance Matrix
+* **Global Production Heatmap**: Filled Map displaying revenue intensity across production countries.
+* **Language vs. Rating Matrix**: A Matrix visual mapping language against binned ratings (1–10), formatted with **Gradient Background Color (Conditional Formatting)**.
+* **Top 10 Languages by Box Office**: Clustered Bar Chart displaying the highest-grossing original languages.
+
+### Page 4: Detailed Movie Drill-Through
+* **Drill-Through Target**: Configured with `movies_metadata[title]` and `original_language` drill-through fields, complete with an automated Back Navigation button.
+* **Movie Inspection Table**: Granular details including title, release date, runtime, budget, revenue, profit, rating, and vote counts.
+* **Search Slicer**: A text-search slicer for instant title lookup.
+
+### Page 5: Ratings & Audience Sentiment
+* **Quality Target Score (Gauge Chart)**: Bounded between `0` and `10` with a target threshold marker set at `7.0`.
+* **User Engagement vs. Quality (Scatter Plot)**: Plots `Total Rating Count` (X-Axis) against `Average Rating` (Y-Axis), with bubble size representing `Total Revenue`.
