@@ -438,6 +438,7 @@ The data model includes the following relationships:
 | Date → movies_metadata     | One-to-Many | Single       |
 
 ## Final Data Model
+![Final Data Model](images/Picture13.png)
 
 The completed model follows a **star-like schema**:
 
