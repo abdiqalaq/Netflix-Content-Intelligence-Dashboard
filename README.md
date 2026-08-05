@@ -360,3 +360,95 @@ The Power BI dashboard is designed using a **Cinematic Dark Theme** with high-co
 ### Page 5: Ratings & Audience Sentiment
 * **Quality Target Score (Gauge Chart)**: Bounded between `0` and `10` with a target threshold marker set at `7.0`.
 * **User Engagement vs. Quality (Scatter Plot)**: Plots `Total Rating Count` (X-Axis) against `Average Rating` (Y-Axis), with bubble size representing `Total Revenue`.
+
+
+# Part 3: Data Modelling
+
+## Overview
+
+This section focuses on designing the data model used in the Power BI project. The objective was to organize the dataset into a structured model that enables efficient filtering, accurate DAX calculations, and high-performance dashboard visualizations.
+
+## Data Model Structure
+
+### Fact Table
+
+The **Ratings** table serves as the central fact table since it contains transactional records of user movie ratings.
+
+**Key fields:**
+
+* `movieId`
+* `userId`
+* `rating`
+* `timestamp`
+
+### Dimension Tables
+
+The model incorporates several dimension tables to provide descriptive information:
+
+| Table               | Purpose                                                                                      |
+| ------------------- | -------------------------------------------------------------------------------------------- |
+| **movies_metadata** | Stores movie details such as title, genres, runtime, language, popularity, and release date. |
+| **credits**         | Contains cast and crew information.                                                          |
+| **keywords**        | Stores movie keywords used for categorization.                                               |
+| **Date**            | Custom calendar table used for time-based analysis.                                          |
+
+The **links** table functions as a bridge between MovieLens and TMDb identifiers, allowing relationships between datasets that use different movie IDs.
+
+## Date Table
+
+A custom Date table was created using DAX's `CALENDAR()` function to support time intelligence.
+
+Additional columns include:
+
+* Year
+* Quarter
+* Month
+* Month Number
+
+These fields enable chronological filtering and trend analysis across the dashboard.
+
+## Table Relationships
+
+The data model includes the following relationships:
+
+| Relationship               | Cardinality | Cross Filter |
+| -------------------------- | ----------- | ------------ |
+| movies_metadata → credits  | One-to-One  | Both         |
+| movies_metadata → keywords | One-to-One  | Both         |
+| movies_metadata → links    | Many-to-One | Single       |
+| links → ratings            | Many-to-One | Single       |
+| Date → movies_metadata     | One-to-Many | Single       |
+
+## Final Data Model
+
+The completed model follows a **star-like schema**:
+
+* **Fact Table:** Ratings
+* **Dimension Tables:** Movies Metadata, Credits, Keywords, Date
+* **Bridge Table:** Links
+
+This design improves query performance, supports efficient filtering, simplifies DAX calculations, and provides a solid foundation for interactive Power BI dashboards.
+
+## Model Preview
+
+> Add screenshots of:
+>
+> * Date table creation
+> * Table relationships
+> * Final Power BI Model View
+
+Example:
+
+```text
+/images/date-table.png
+/images/relationships.png
+/images/model-view.png
+```
+
+## Technologies Used
+
+* Power BI
+* Power Query
+* DAX
+* Star Schema Data Modelling
+
