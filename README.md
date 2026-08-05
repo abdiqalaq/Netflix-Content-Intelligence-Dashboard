@@ -1,3 +1,252 @@
+# Netflix Content Intelligence Dashboard
+## Week 2 – Power Query Data Cleaning and Transformation
+
+## Project Overview
+
+This project focuses on preparing the Netflix Movies and TV Shows dataset for business intelligence analysis using Microsoft Power BI. During Week 2, the primary objective was to clean, transform, and prepare multiple datasets using Power Query to ensure high-quality, analysis-ready data for subsequent modelling, DAX calculations, and dashboard development.
+
+The Power Query stage improves data consistency, removes quality issues, and creates additional features required for interactive reporting.
+
+---
+
+# Datasets Used
+
+The following datasets were imported into Power BI:
+
+- movies_metadata.csv
+- credits.csv
+- keywords.csv
+- links.csv
+- ratings.csv
+
+Each dataset was cleaned individually before being integrated into the final data model.
+
+---
+
+# Power Query Data Cleaning
+
+The following data cleaning operations were performed.
+
+## 1. Data Import
+
+All CSV datasets were imported into Power BI using the Power Query Editor.
+<img width="1317" height="967" alt="image" src="https://github.com/user-attachments/assets/9ce7b913-52b6-4b2d-bac9-091757d5d656" />
+
+---
+
+## 2. Data Type Corrections
+
+Incorrect data types were corrected to improve consistency and enable accurate analysis.
+
+Examples include:
+
+- Movie ID → Whole Number
+- Revenue → Whole Number
+- Budget → Whole Number
+- Runtime → Whole Number
+- Release Date → Date
+- Vote Average → Decimal Number
+- Vote Count → Whole Number
+
+---
+
+## 3. Duplicate Removal
+
+Duplicate records were identified and removed using unique identifiers to improve data quality.
+<img width="1914" height="943" alt="image" src="https://github.com/user-attachments/assets/fd97de2e-ec4b-4739-b121-c5b5fea7526c" />
+
+---
+
+## 4. Blank Row Removal
+
+Completely blank records were removed from all imported datasets.
+
+---
+
+## 5. Text Cleaning
+
+Text fields were standardized using Power Query formatting tools.
+
+Operations performed include:
+
+- Trim
+- Clean
+<img width="1876" height="955" alt="image" src="https://github.com/user-attachments/assets/158ce50f-0bbd-4f4d-9d21-ea6af2a3bfcb" />
+
+These transformations removed unnecessary spaces and non-printable characters.
+
+---
+
+## 6. Missing Value Handling
+
+Datasets were reviewed for missing values.
+
+Where appropriate:
+
+- Missing values were replaced where necessary.
+- Irrelevant null records were retained where they did not affect analysis.
+- Important fields were validated before modelling.
+
+---
+
+## 7. Remove Unnecessary Columns
+
+Unused attributes were removed to simplify the data model and improve report performance.
+
+Examples include metadata fields that were not required for analysis.
+
+---
+
+## 8. Date Transformation
+
+The Release Date field was converted into Date format.
+
+Additional date attributes were extracted:
+
+- Year
+- Month
+- Quarter
+- Day
+
+These fields support time-series analysis and dashboard filtering.
+
+---
+
+## 9. Split Columns
+
+Text columns were split using Power Query's Split Column functionality to demonstrate advanced transformation techniques.
+
+---
+
+## 10. Merge Queries
+
+Related datasets were merged using common identifiers to enrich movie records with additional information.
+
+Merge operations were performed using the Merge Queries functionality in Power Query.
+
+---
+
+## 11. Conditional Columns
+
+Business logic was implemented using Conditional Columns.
+
+Example:
+
+Revenue Category
+
+- Blockbuster
+- Successful
+- Low Revenue
+
+This enables segmentation of movies according to financial performance.
+
+---
+
+## 12. Custom Transformations
+
+Additional calculated attributes were created using Power Query transformation features to improve downstream analysis.
+
+---
+
+# Advanced Power Query Features
+
+The following advanced Power Query techniques were implemented.
+
+- Merge Queries
+- Column Profiling
+- Reference Queries
+- Group By
+- Summarized Tables
+- Conditional Columns
+
+### Merge Queries
+
+Datasets were merged using common keys to combine related information from multiple tables.
+<img width="1891" height="666" alt="image" src="https://github.com/user-attachments/assets/2730c940-f63c-499d-b6df-5c98840c6d2a" />
+
+### Column Profiling
+
+Power Query's Column Quality, Column Distribution, and Column Profile features were used to assess data quality and identify potential issues before modelling.
+
+### Reference Queries
+
+Reference queries were created to preserve the original datasets while generating transformed analytical tables.
+
+### Group By
+
+Grouping operations were performed to summarize movie information, including:
+
+- Number of Movies by Year
+- Average Revenue by Year
+<img width="1870" height="940" alt="image" src="https://github.com/user-attachments/assets/4730a157-2412-4c9d-8bfb-69042a7089e0" />
+
+### Summarized Tables
+
+Summary tables were generated using Group By aggregations for business reporting and analysis.
+
+### Conditional Columns
+
+Business categories were created using nested conditions to classify records according to predefined business rules.
+<img width="1771" height="925" alt="image" src="https://github.com/user-attachments/assets/c7f29fe6-1fd1-4c0b-90de-72ce4248654c" />
+
+---
+
+# Data Preparation Outcome
+
+After completing Power Query transformations:
+
+- Cleaned datasets were produced.
+- Duplicate records were removed.
+- Data types were standardized.
+- Missing values were handled.
+- Date dimensions were generated.
+- Summary tables were created.
+- Queries were optimized for reporting.
+
+The cleaned datasets are now ready for:
+
+- Data Modelling
+- Relationship Creation
+- DAX Calculations
+- Dashboard Development
+
+---
+
+# Evidence Produced
+
+The following evidence was captured during Week 2:
+
+- Raw dataset screenshots
+- Power Query Editor screenshots
+- Applied Steps screenshots
+- Column Profiling screenshots
+- Final cleaned dataset screenshots
+- Advanced Power Query transformation screenshots
+
+---
+
+# Technologies Used
+
+- Microsoft Power BI Desktop
+- Power Query Editor
+- CSV Datasets
+- GitHub
+
+---
+
+# Week 2 Deliverables
+
+- Cleaned datasets
+- Power Query transformations
+- Advanced Power Query operations
+- Prepared analytical tables
+- Documentation
+
+
+
+
+
+
 # DAX Measures Implemented
 
 The dashboard includes a total of **19 DAX measures**, organized into the required categories.
