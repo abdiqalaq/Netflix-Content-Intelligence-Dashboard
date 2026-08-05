@@ -429,26 +429,4 @@ The completed model follows a **star-like schema**:
 
 This design improves query performance, supports efficient filtering, simplifies DAX calculations, and provides a solid foundation for interactive Power BI dashboards.
 
-## Model Preview
-
-> Add screenshots of:
->
-> * Date table creation
-> * Table relationships
-> * Final Power BI Model View
-
-Example:
-
-```text
-/images/date-table.png
-/images/relationships.png
-/images/model-view.png
-```
-
-## Technologies Used
-
-* Power BI
-* Power Query
-* DAX
-* Star Schema Data Modelling
 
