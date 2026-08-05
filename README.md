@@ -1,5 +1,5 @@
 # Netflix Content Intelligence Dashboard
-## Week 2 – Power Query Data Cleaning and Transformation
+## Power Query Data Cleaning and Transformation
 
 ## Project Overview
 
