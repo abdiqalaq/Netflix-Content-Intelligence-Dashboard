@@ -342,24 +342,42 @@ The Power BI dashboard is designed using a **Cinematic Dark Theme** with high-co
 * **Top 10 High-Profit Movies**: Horizontal Clustered Bar Chart filtered using a `Top 10 N` visual filter by `[Total Profit]`.
 * **Global Slicers**: Interactive filters for `release_date` (Range Slider), `original_language` (Dropdown), and `status`.
 
+<img width="745" height="343" alt="image" src="https://github.com/user-attachments/assets/11d2be26-1ebf-4900-a653-9e2b01f2d7cd" />
+
+
 ### Page 2: Financial Trend & Market Growth Analysis
 * **Revenue & Movie Count Over Time**: A Line and Stacked Column Chart tracking yearly revenue alongside production volume.
 * **Profit Breakdown (Decomposition Tree)**: An interactive visual allowing users to drill down into `[Total Profit]` by language, status, and release year.
 * **YoY Performance Indicator**: A KPI visual measuring yearly revenue growth against the `[YoY Revenue Growth %]` target.
+
+<img width="601" height="340" alt="image" src="https://github.com/user-attachments/assets/19059b76-c6a6-45a2-9baf-989e96aa6e7a" />
+
+
 
 ### Page 3: Geographic & Language Performance Matrix
 * **Global Production Heatmap**: Filled Map displaying revenue intensity across production countries.
 * **Language vs. Rating Matrix**: A Matrix visual mapping language against binned ratings (1–10), formatted with **Gradient Background Color (Conditional Formatting)**.
 * **Top 10 Languages by Box Office**: Clustered Bar Chart displaying the highest-grossing original languages.
 
+<img width="601" height="337" alt="image" src="https://github.com/user-attachments/assets/b93b9494-0c9d-449a-97b3-3430a28d4f4e" />
+
+
+
 ### Page 4: Detailed Movie Drill-Through
 * **Drill-Through Target**: Configured with `movies_metadata[title]` and `original_language` drill-through fields, complete with an automated Back Navigation button.
 * **Movie Inspection Table**: Granular details including title, release date, runtime, budget, revenue, profit, rating, and vote counts.
 * **Search Slicer**: A text-search slicer for instant title lookup.
 
+<img width="606" height="340" alt="image" src="https://github.com/user-attachments/assets/29508243-c711-4c65-bccf-1d03bbc65b5f" />
+
+
 ### Page 5: Ratings & Audience Sentiment
 * **Quality Target Score (Gauge Chart)**: Bounded between `0` and `10` with a target threshold marker set at `7.0`.
 * **User Engagement vs. Quality (Scatter Plot)**: Plots `Total Rating Count` (X-Axis) against `Average Rating` (Y-Axis), with bubble size representing `Total Revenue`.
+
+<img width="604" height="337" alt="image" src="https://github.com/user-attachments/assets/3c6dd0bf-096a-40b6-9818-c102ce9a0a73" />
+
+
 
 
 # Part 3: Data Modelling
