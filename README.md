@@ -310,7 +310,6 @@ The completed model follows a **star-like schema**:
 
 This design improves query performance, supports efficient filtering, simplifies DAX calculations, and provides a solid foundation for interactive Power BI dashboards.
 
-![Final Data Model](Screenshots/ModelView.png)
 
 
 
