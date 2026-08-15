@@ -309,7 +309,7 @@ The completed model follows a **star-like schema**:
 * **Bridge Table:** Links
 
 This design improves query performance, supports efficient filtering, simplifies DAX calculations, and provides a solid foundation for interactive Power BI dashboards.
-
+![Power BI Data Model](screenshots/Model_view.png)
 
 
 
