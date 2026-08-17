@@ -1,3 +1,11 @@
+# Group Members 10
+1. Emmanuel Muondo 669926
+2. Hans Onesmo 671463
+3. Hafsamumtaz Hassan 672528
+4. Abdiqalaq Isaack 671243
+5. Salim Komesha 671338
+6. ⁠Collins Gitau 669710
+
 # Netflix Content Intelligence Dashboard
 ## Power Query Data Cleaning and Transformation
 
