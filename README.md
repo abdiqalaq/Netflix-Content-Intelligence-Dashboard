@@ -1,4 +1,4 @@
-# Group Members 10
+# Group 10 Members
 1. Emmanuel Muondo 669926
 2. Hans Onesmo 671463
 3. Hafsamumtaz Hassan 672528
